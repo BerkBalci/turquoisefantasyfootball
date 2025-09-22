@@ -129,9 +129,14 @@ TurquoiseFantasyFootball/
 
 
 ### Proje Kullanımı
--Canlı maç sonuçları ve istatistiklerini tamamen manuel yönetebilirsiniz.
--Eğer canlı maç sonuçları ve istatistikler için herhangi bir api kullanacaksanız entegre edebilirsiniz.
--Fikstürleri manuel olarak girip kullanıcıların fantasy takımlarını oluşturmasını sağlayabilirsiniz.
--Maçlar tamamlandıktan sonra her oyuncunun istatistiklerini manuel olarak girip haftayı kapatıp puan hesaplaması yapabilirisiniz.
--Kullanıcıların kurdukları takım puanları hesaplanır ve arkadaşlarınızla kendi fantasy liginizde eğlenebilirsiniz.
--Puanlama sistemi ile her istatistiğe verilecek puanı değiştirebilir kendi liginizi dizayn edebilirsiniz.
+- Canlı maç sonuçları ve istatistiklerini tamamen manuel yönetebilirsiniz.
+- 
+- Eğer canlı maç sonuçları ve istatistikler için herhangi bir api kullanacaksanız entegre edebilirsiniz.
+- 
+- Fikstürleri manuel olarak girip kullanıcıların fantasy takımlarını oluşturmasını sağlayabilirsiniz.
+- 
+- Maçlar tamamlandıktan sonra her oyuncunun istatistiklerini manuel olarak girip haftayı kapatıp puan hesaplaması yapabilirisiniz.
+- 
+- Kullanıcıların kurdukları takım puanları hesaplanır ve arkadaşlarınızla kendi fantasy liginizde eğlenebilirsiniz.
+- 
+- Puanlama sistemi ile her istatistiğe verilecek puanı değiştirebilir kendi liginizi dizayn edebilirsiniz.
