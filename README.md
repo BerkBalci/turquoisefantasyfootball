@@ -1,137 +1,134 @@
 # 🏆 Turquoise Fantasy Football
 
-Modern web teknolojileri kullanılarak geliştirilmiş kapsamlı bir Fantasy Football yönetim platformu. Kullanıcıların takım oluşturmasına, oyuncu yönetmesine ve maç haftalarını takip etmesine olanak sağlayan tam özellikli bir uygulama.
+A comprehensive Fantasy Football management platform developed using modern web technologies. A full-featured application that allows users to create teams, manage players, and track match weeks.
 
-## ✨ Özellikler
+## ✨ Features
 
-### 👥 Kullanıcı Yönetimi
-- 🔐 Güvenli kullanıcı kayıt ve giriş sistemi
-- 🛡️ JWT token tabanlı kimlik doğrulama
-- 🔒 Bcrypt ile şifre hashleme
-- 👑 Admin paneli ile kullanıcı yönetimi
+### 👥 User Management
+- 🔐 Secure user registration and login system
+- 🛡️ JWT token-based authentication
+- 🔒 Password hashing with Bcrypt
+- 👑 User management with the admin panel
 
-### ⚽ Takım ve Oyuncu Yönetimi
-- 🏟️ Takım oluşturma ve düzenleme
-- 👤 Oyuncu ekleme, düzenleme ve silme
-- 📊 Pozisyon bazlı oyuncu kategorileri (Kaleci, Defans, Orta Saha, Forvet)
-- 🎯 Takım oluşturucu arayüzü
+### ⚽ Team and Player Management
+- 🏟️ Team creation and editing
+- 👤 Add, edit, and delete players
+- 📊 Position-based player categories (Goalkeeper, Defender, Midfielder, Forward)
+- 🎯 Team builder interface
 
-### 🗓️ Maç ve Hafta Yönetimi
-- 📅 Maç haftası oluşturma ve yönetimi
-- ⚽ Maç programlama ve sonuç girişi
-- 🏆 Puanlama sistemi
-- 📈 İstatistik takibi
+### 🗓️ Match and Week Management
+- 📅 Match week creation and management
+- ⚽ Match scheduling and results entry
+- 🏆 Scoring system
+- 📈 Statistics tracking
 
-### 🎨 Modern Arayüz
-- 📱 Responsive tasarım
-- 🎯 Kullanıcı dostu arayüz
-- ⚡ Hızlı ve akıcı deneyim
-- 🔔 Gerçek zamanlı bildirimler
+### 🎨 Modern Interface
+- 📱 Responsive design
+- 🎯 User-friendly interface
+- ⚡ Fast and smooth experience
+- 🔔 Real-time notifications
 
-
-## 🛠️ Teknolojiler
+## 🛠️ Technologies
 
 ### Backend
 - **Node.js** - Server-side JavaScript runtime
 - **Express.js** - Web framework
-- **MySQL** - İlişkisel veritabanı
-- **JWT** - Token tabanlı kimlik doğrulama
-- **Bcrypt** - Şifre hashleme
+- **MySQL** - Relational database
+- **JWT** - Token-based authentication
+- **Bcrypt** - Password hashing
 - **CORS** - Cross-origin resource sharing
 
 ### Frontend
-- **React.js** - Kullanıcı arayüzü kütüphanesi
-- **React Router** - Sayfa yönlendirme
-- **Axios** - HTTP istekleri
-- **CSS3** - Modern stil tasarımı
+- **React.js** - User interface library
+- **React Router** - Page routing
+- **Axios** - HTTP requests
+- **CSS3** - Modern style design
 
-## 🚀 Kurulum
+## 🚀 Installation
 
-### Gereksinimler
-- Node.js (v14 veya üzeri)
-- MySQL (XAMPP ile birlikte gelir)
-- npm veya yarn
+### Requirements
+- Node.js (v14 or later)
+- MySQL (included with XAMPP)
+- npm or yarn
 
-### 1. Veritabanı Kurulumu
-1. XAMPP'ı başlatın ve MySQL servisini çalıştırın
-2. phpMyAdmin'e gidin (http://localhost/phpmyadmin)
-3. `backend/database.sql` dosyasını çalıştırarak veritabanını oluşturun
+### 1. Database Installation
+1. Start XAMPP and start the MySQL service Run
+2. Go to phpMyAdmin (http://localhost/phpmyadmin)
+3. Create the database by running `backend/database.sql`.
 
-### 2. Backend Kurulumu
+### 2. Backend Installation
 ```bash
 cd backend
 npm install
 npm start
 ```
-Backend http://localhost:5000 adresinde çalışacak.
+The backend will run at http://localhost:5000.
 
-### 3. Frontend Kurulumu
+### 3. Frontend Installation
 ```bash
 cd frontend
 npm install
 npm start
 ```
-Frontend http://localhost:3000 adresinde çalışacak.
+The frontend will run at http://localhost:3000.
 
-## 📖 Kullanım
+## 📖 Usage
 
-1. Uygulamayı başlattıktan sonra http://localhost:3000 adresine gidin
-2. "Kayıt Ol" linkine tıklayarak yeni hesap oluşturun
-3. Oluşturduğunuz bilgilerle giriş yapın
-4. Admin iseniz yönetim paneli, kullanıcı iseniz dashboard görüntülenecek
+1. After launching the application, go to http://localhost:3000
+2. Create a new account by clicking the "Sign Up" link
+3. Log in with the information you created
+4. If you are an admin, the administration panel will appear, and if you are a user, the dashboard will appear.
 
-## 📁 Proje Yapısı
+## 📁 Project Structure
 
 ```
 TurquoiseFantasyFootball/
 ├── backend/
-│   ├── config.js          # Veritabanı konfigürasyonu
-│   ├── database.sql       # Veritabanı şeması
-│   ├── db.js             # Veritabanı bağlantısı
-│   ├── server.js         # Ana server dosyası
-│   └── package.json      # Backend bağımlılıkları
+│ ├── config.js # Database configuration
+│ ├── database.sql # Database schema
+│ ├── db.js # Database connection
+│ ├── server.js # Main server file
+│ └── package.json # Backend dependencies
 ├── frontend/
-│   ├── public/
-│   │   └── index.html    # Ana HTML dosyası
-│   ├── src/
-│   │   ├── components/   # React bileşenleri
-│   │   │   ├── AdminPanel.js
-│   │   │   ├── Dashboard.js
-│   │   │   ├── Login.js
-│   │   │   ├── Signup.js
-│   │   │   ├── TeamManagement.js
-│   │   │   ├── PlayerManagement.js
-│   │   │   ├── MatchManagement.js
-│   │   │   └── ...
-│   │   ├── contexts/
-│   │   │   └── AuthContext.js
-│   │   ├── App.js        # Ana uygulama bileşeni
-│   │   └── index.js      # Uygulama giriş noktası
-│   └── package.json      # Frontend bağımlılıkları
+│ ├── public/
+│ │ └── index.html # Main HTML file
+│ ├── src/
+│ │ ├── components/ # React components
+│ │ │ ├── AdminPanel.js
+│ │ │ ├── Dashboard.js
+│ │ │ ├── Login.js
+│ │ │ ├── Signup.js
+│ │ │ ├── TeamManagement.js
+│ │ │ ├── PlayerManagement.js
+│ │ │ ├── MatchManagement.js
+│ │ │ │ └── ...
+│ │ ├── contexts/
+│ │ │ └── AuthContext.js
+│ │ ├── App.js # Main application component
+│ │ └── index.js # Application entry point
+│ └── package.json # Frontend dependencies
 └── README.md
 ```
 
-## 🎯 Özellik Detayları
+## 🎯 Feature Details
 
-### Admin Paneli
-- Kullanıcı yönetimi
-- Takım ve oyuncu ekleme/düzenleme
-- Maç haftası oluşturma
-- Maç sonuçları girişi
-- Puanlama sistemi yönetimi
+### Admin Panel
+- User management
+- Add/edit teams and players
+- Create match week schedules
+- Match results entry
+- Scoring system management
 
-### Kullanıcı Dashboard
-- Takım oluşturma
-- Oyuncu seçimi
-- Maç sonuçlarını görüntüleme
-- Puan takibi
+### User Dashboard
+- Team creation
+- Player selection
+- View match results
+- Track points
 
-
-
-### Proje Kullanımı
-- Canlı maç sonuçları ve istatistiklerini tamamen manuel yönetebilirsiniz.
-- Eğer canlı maç sonuçları ve istatistikler için herhangi bir api kullanacaksanız entegre edebilirsiniz.
-- Fikstürleri manuel olarak girip kullanıcıların fantasy takımlarını oluşturmasını sağlayabilirsiniz.
-- Maçlar tamamlandıktan sonra her oyuncunun istatistiklerini manuel olarak girip haftayı kapatıp puan hesaplaması yapabilirisiniz.
-- Kullanıcıların kurdukları takım puanları hesaplanır ve arkadaşlarınızla kendi fantasy liginizde eğlenebilirsiniz.
-- Puanlama sistemi ile her istatistiğe verilecek puanı değiştirebilir kendi liginizi dizayn edebilirsiniz.
+### Project Usage
+- You can manage live match results and statistics completely manually.
+- If you plan to use any API for live match results and statistics, you can integrate it.
+- You can manually enter fixtures and allow users to create their fantasy teams.
+- After matches are completed, you can manually enter each player's statistics and calculate points at the end of the week.
+- Users' team points are calculated, and you can enjoy your own fantasy league with your friends.
+- With the points system, you can change the points assigned to each statistic and design your own league.
